@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/thumbnail_IMG_0185.jpg" class="logo">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Broward College Student</p>
+            <h1>Hi, My name is <span>Monel</span><br>Fene I'm from Fort Lauderdale, Florida.</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------ -->
+<div id="About">
+     <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/thumbnail_IMG_0176.jpg">
+            </div>
+            <div class="about-col-2"></div>
+                <h1 class="sub-title">Short Biography</h1>
+                <p>Hi, my name is Monel Fene II, I was born in Fort Lauderdale,FL. To parent Elcie Pierre and Monel Fene Sr which which both are Haitian descent. Growing up most of my time was spent in front of the computer screen and playing video games.If I wasn't playing video games I would be outside playing football,baseball and kickball.</p>
+
+                <div id="services">
+                    <div class="container">
+                <h1 class="sub-title">Career Summary</h1>
+                <p>I'm currently a student who earned my Associates in Information Technology Summer 2023 and pursing my Bachelors Degree in Web Development. My dream job that I'm trying to pursue is UX/UI Design because I possess some of the traits in UX/UI design like Problem-Solving,Teamwork and Continous Learning.</p>
+                        <div class="sevices-list">
+                           <div> 
+                
+                        <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <br>Customer Service</li>
+                        <br>Problem Problem-Solving</li>
+                        <br>Teamwork</li>
+                        <br>Continous Learning</br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+<!----------services------------>
+<h1 class="sub-title">Experience</h1>
+            </div>
+            <div> 
+                <h1>Winn-Dixie June 2021-November 2021</h1>
+                <p> <br>Stocking Shelves</li> 
+                    <br>Customer Service Representative</li>
+                    <br>Janitor</li>
+                </p>
+            </div>
+            
+            <div> 
+                <h2>Chick-Fil-A November 2021-August 2022</h2>              
+                <p> <br>Processing Orders</li>
+                    <br>Management of Facility</li>
+                    <br>Customer Service Representative</li> </p>
+               
+            </div>
+
+            <div>
+                <h3>Finishline August 2022- December 2022</h3>
+                    <br>Sales Representative</li>
+                    <br>Inventory Control</li>
+                    <br>Customer Representative<li>
+
+         </div>
+     </div>
+   
+           
+                <div> 
+                    <h3>Publix December 2022- Current</h3>
+                    <br>Cashier</li>
+                    <br>Stocker</li>
+                    <br>Customer Representative<li>
+                </div>
+    </div>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <br>Customer Service</li>
+            <br>Problem Problem-Solving</li>
+            <br>Teamwork</li>
+            <br>Continous Learning</br>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-----------------portfolio--------------->
+<div id="Portfolio"
+        <h1 class="sub-title"> My Project</h1>
+        <div class="worklist"></div>
+            <div classes="work"> 
+                <img src="Images/Screen Shot 2023-12-04 at 7.39.57 PM.png">    
+                <p></p>
+            </div>    
+<script>
+
+    var tabLinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }       
+        for(tablink of tablinks){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
